@@ -1,0 +1,391 @@
+/*Изменение размера шрифта в выдаче автокомплит*/
+.ui-autocomplete.ui-widget {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+
+
+
+/* Базовые стили формы */
+#form{
+  margin:0 auto;
+  max-width:95%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px; 
+  background:RGBA(255,255,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+}
+/* Стили полей ввода */
+.textbox{
+  height:60px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:40px; 
+  padding:10px;
+  margin-bottom:20px;  
+}
+.textbox_sm{
+  height:60px;
+  width:75%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:30px; 
+  padding:10px;
+  margin-bottom:20px;  
+}
+.message:focus,
+.textbox:focus,
+.textbox_sm:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+}
+/* Стили текстового поля */
+.message{
+    background: rgba(255, 255, 255, 0.4); 
+    width:100%;
+    height: 120px;
+    border:rgba(24,149,215,1) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+/* Базовые стили кнопки */
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(24,149,215,1) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:rgba(24,149,215,1);
+  color:#fff;
+  font-family: 'Open Sans', sans-serif;  
+  font-weight:400;
+  font-size: 16pt;
+  transition:background .4s;
+  cursor:pointer;
+
+  
+}
+
+/* Изменение фона кнопки при наведении */
+.button:hover{
+  background:rgba(0, 0, 0, 0.82);
+}
+
+
+/*Текст*/
+h1 {
+    /*border:1px solid black;*/
+    padding: 10px;
+    margin: 10px;
+    color: rgba(24,149,215,1);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;     
+}
+
+h2 {
+        /*border:1px solid black;*/
+        padding: 10px;
+        margin: 30px;
+        color: rgba(24,149,215,1);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 200;
+        font-family: 'Open Sans', sans-serif;
+    }
+h3 {
+    /*border:1px solid black;*/
+    padding: 0px;
+    color: rgba(24,149,215,1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+    .A:link { 
+        padding: 0px;
+        color: rgba(24,149,215,1);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 100;
+        font-family: 'Open Sans', sans-serif;
+   } 
+
+/*table td, table td * {
+    
+
+/* наша HTML таблица */
+table {
+}
+
+.main td {
+    vertical-align: top;
+}
+
+.sort{
+    border-spacing:0.1em;
+    margin-bottom:1em;
+    margin-top:1em;
+
+    
+}
+
+/* ячейки таблицы */
+.sort td{
+    border:1px solid #CCCCCC;
+    padding:0.3em 1em;
+
+
+}
+
+/* заголовки таблицы */
+.sort thead td{
+    cursor:pointer;
+    font-weight:bold;
+    text-align:center;
+    font-size: 24px;
+    color: rgba(24,149,215,1);
+    transition:background .4s;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.sort thead td:hover{
+    background: rgba(127, 127, 127, 0.52);
+}
+/* заголовок отсортированного столбца */
+.sort thead td.curcol{
+    background-color:rgba(24,149,215,1);
+    transition:background .4s;
+    color:#FFFFFF
+}
+.sort thead td.curcol:hover{
+  background:rgba(0, 0, 0, 0.82);
+}
+
+p {
+    /*border:1px solid black;*/
+    padding:10px;
+    margin:30px;
+    text-align: center;
+    font-size: 24px;
+    color: rgba(24,149,215,1);
+    font-family: 'Open Sans', sans-serif;
+}
+   #content {
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+   }
+#footer {
+    /*position: fixed; /* Фиксированное положение Приводит к наезжанию форм друг на друга*/ 
+    left: 0; bottom: 60px; /* Левый нижний угол */
+    width: 100%; /* Ширина слоя */
+}
+#img {
+        /*border:1px solid black;*/
+        padding: 10px;
+        margin: 50px;
+        margin-left: 160px;
+        text-align: center;
+
+    }
+
+
+
+@media only screen and (max-device-width: 1023px) {
+    /*Изменение размера шрифта в выдаче автокомплит*/
+    .ui-autocomplete.ui-widget {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 72px;
+    }
+
+
+    /* Базовые стили формы */
+    #form {
+        margin: 0 auto;
+        max-width: 95%;
+        box-sizing: border-box;
+        padding: 40px;
+        border-radius: 5px;
+        background: RGBA(255,255,255,1);
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .45);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .45);
+    }
+    /* Стили полей ввода */
+    .textbox {
+        height: 180px;
+        width: 100%;
+        border-radius: 3px;
+        border: rgba(0,0,0,.3) 2px solid;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 72px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .textbox_sm {
+        height: 60px;
+        width: 75%;
+        border-radius: 3px;
+        border: rgba(0,0,0,.3) 2px solid;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .message:focus, .textbox:focus, .textbox_sm:focus {
+        outline: none;
+        border: rgba(24,149,215,1) 2px solid;
+        color: rgba(24,149,215,1);
+    }
+    /* Стили текстового поля */
+    .message {
+        background: rgba(255, 255, 255, 0.4);
+        width: 100%;
+        height: 120px;
+        border: rgba(24,149,215,1) 2px solid;
+        box-sizing: border-box;
+        -moz-border-radius: 3px;
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        display: block;
+        padding: 10px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    /* Базовые стили кнопки */
+    .button {
+        height: 100px;
+        width: 100%;
+        border-radius: 3px;
+        border: rgba(24,149,215,1) 0px solid;
+        box-sizing: border-box;
+        padding: 10px;
+        background: rgba(24,149,215,1);
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 42pt;
+        transition: background .4s;
+        cursor: pointer;
+    }
+    /* Изменение фона кнопки при наведении */
+    .button:hover {
+        background: rgba(0, 0, 0, 0.82);
+    }
+
+
+
+    /*Текст*/
+    h1 {
+        /*border:1px solid black;*/
+        padding: 10px;
+        margin: 30px;
+        color: rgba(24,149,215,1);
+        text-align: center;
+        font-size: 54px;
+        font-weight: 200;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h2 {
+        /*border:1px solid black;*/
+        padding: 10px;
+        margin: 30px;
+        color: rgba(24,149,215,1);
+        text-align: center;
+        font-size: 0px;
+        font-weight: 200;
+        font-family: 'Open Sans', sans-serif;
+        visibility: hidden
+    }
+    h3 {
+        /*border:1px solid black;*/
+        padding: 10px;
+        margin: 30px;
+        color: rgba(24,149,215,1);
+        text-align: center;
+        font-size: 54px;
+        font-weight: 200;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .A:link { 
+        padding: 10px;
+        margin: 10px;
+        color: rgba(24,149,215,1);
+        text-align: center;
+        font-size: 54px;
+        font-weight: 200;
+        font-family: 'Open Sans', sans-serif;
+   } 
+
+    p {
+        /*border:1px solid black;*/
+        padding: 10px;
+        margin: 30px;
+        text-align: center;
+        font-size: 60px;
+        color: rgba(24,149,215,1);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #footer {
+        /*position: fixed; /* Фиксированное положение */
+        left: 0;
+        bottom: 0; /* Левый нижний угол */
+        width: 100%; /* Ширина слоя */
+    }
+    /* наша HTML таблица */
+    table.sort{
+    border-spacing:0.1em;
+    margin-bottom:1em;
+    margin-top:1em;
+    vertical-align: top
+    }
+
+    /* ячейки таблицы */
+    table.sort td{
+    border:1px solid #CCCCCC;
+    padding:0.3em 1em
+    }
+
+    /* заголовки таблицы */
+    table.sort thead td{
+    cursor:pointer;
+    font-weight:bold;
+    text-align:center;
+    font-size: 36px;
+    color: rgba(24,149,215,1);
+    vertical-align:top
+    }
+
+    /* заголовок отсортированного столбца */
+    table.sort thead td.curcol{
+    background-color: rgba(24,149,215,1);
+    color:#FFFFFF
+    }
+
+}
